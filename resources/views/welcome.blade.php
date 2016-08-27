@@ -6,10 +6,10 @@
 
 <div class="row">
     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
-    <img src="http://placehold.it/750x350/ffffff/000000?text=Football Field Grid Goes Here">
+    <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-    <img src="http://placehold.it/300x350/ffffff/000000?text=List Of Entered Sets Goes Here">
+    <img src="http://placehold.it/200x350/ffffff/000000?text=List Of Entered Sets Goes Here">
     <br>
     </div>
 </div>
