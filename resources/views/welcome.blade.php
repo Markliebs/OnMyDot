@@ -3,6 +3,20 @@
 
     <div class="h1">I'm on my dot</h1><br>
     </div>
+
+<div class="row">
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+    <img src="http://placehold.it/750x350/ffffff/000000?text=Football Field Grid Goes Here">
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+    <img src="http://placehold.it/300x350/ffffff/000000?text=List Of Entered Sets Goes Here">
+    <br>
+    </div>
+</div>
+
+
+
+
     <div class="panel panel-success">
         <div class="panel-heading">
             <h3 class="panel-title">Enter a new set</h3>
@@ -80,7 +94,7 @@
 
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Dist. From SL</h5></label>
+                                    <label for="select" class="control-label"><h5>Front/Back</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" id="distanceFromSideline">
                     <option value="one">1</option>
@@ -116,9 +130,14 @@
                                     </div>
                                 </div>
                             </div>
-                
+                <div class="form-group">
+                <div class="col-lg-1 col-lg-offset-1">
+                    <button type="restart" class="btn btn-danger btn-sm">Restart</button>
+                    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                </div>
             </div>
-</div>
+            </div>
+
 
             {{--
             <div class="row">
@@ -135,16 +154,10 @@
                 </div>
             </div> --}}
 
-            <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-10">
-                    <button type="restart" class="btn btn-danger btn-sm">Restart</button>
-                    <button type="submit" class="btn btn-success btn-sm">Submit</button>
-                </div>
-            </div>
+            
             </fieldset>
             </form>
         </div>
-    </div>
     </div>
 </div>
 
