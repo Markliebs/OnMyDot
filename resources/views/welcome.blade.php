@@ -5,7 +5,7 @@
     </div>
 
 <div class="row">
-    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
     <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
@@ -139,8 +139,8 @@
             </div>
 
 
-            {{--
-            <div class="row">
+
+            <!-- <div class="row">
                 <div class="form-group">
                     <label for="select" class="control-label"><h5>Hash Marks</h5></label>
                     <div class="selWidth">
@@ -152,9 +152,9 @@
                         <br>
                     </div>
                 </div>
-            </div> --}}
+            </div> -->
 
-            
+
             </fieldset>
             </form>
         </div>
