@@ -8,7 +8,7 @@
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
     <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
     </div>
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
     <img src="http://placehold.it/200x350/ffffff/000000?text=List Of Entered Sets Goes Here">
     <br>
     </div>
@@ -28,7 +28,7 @@
                 <div class="row">
                     <form class="form-horizontal">
                         <fieldset>
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Side</h5></label>
                                     <div class="selWidth">
