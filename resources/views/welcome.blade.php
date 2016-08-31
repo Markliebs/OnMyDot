@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Side</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="selectSide selWidth">
+                                        <select class="form-control" id="selectSide">
                                         <option value="one">1</option>
                                         <option value="two">2</option>
                                         </select>
@@ -79,12 +79,12 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Steps Off Line</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="distanceFromSideline">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                        </select>
+                                        <select class="form-control" id="distanceFromYardline">
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                        </select>
                                         <br>
                                     </div>
                                 </div>
