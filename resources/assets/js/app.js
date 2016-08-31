@@ -18,3 +18,10 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: 'body'
 });
+
+$(document).ready(function () {
+
+$( "#submitButton" ).submit(function( event ) {
+  alert( "Test!" );
+});
+});

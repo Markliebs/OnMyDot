@@ -4,15 +4,15 @@
     <div class="h1">I'm on my dot</h1><br>
     </div>
 
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-    <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <img src="http://placehold.it/200x350/ffffff/000000?text=List Of Entered Sets Goes Here">
+            <br>
+        </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-    <img src="http://placehold.it/200x350/ffffff/000000?text=List Of Entered Sets Goes Here">
-    <br>
-    </div>
-</div>
 
 
 
@@ -97,50 +97,50 @@
                                     <label for="select" class="control-label"><h5>Front/Back</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" id="distanceFromSideline">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                    <option value="eleven">11</option>
-                    <option value="twelve">12</option>
-                    <option value="thirteen">13</option>
-                    <option value="fourteen">14</option>
-                    <option value="fifteen">15</option>
-                    <option value="sixteen">16</option>
-                    <option value="seventeen">17</option>
-                    <option value="eighteen">18</option>
-                    <option value="nineteen">19</option>
-                    <option value="twenty">20</option>
-                    <option value="twentyOne">21</option>
-                    <option value="twentyTwo">22</option>
-                    <option value="twentyThree">23</option>
-                    <option value="twentyFour">24</option>
-                    <option value="twentyFive">25</option>
-                    <option value="twentySix">26</option>
-                    <option value="twentySeven">27</option>
-                    <option value="twentyEight">28</option>
-                        </select>
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                            <option value="five">5</option>
+                                            <option value="six">6</option>
+                                            <option value="seven">7</option>
+                                            <option value="eight">8</option>
+                                            <option value="nine">9</option>
+                                            <option value="ten">10</option>
+                                            <option value="eleven">11</option>
+                                            <option value="twelve">12</option>
+                                            <option value="thirteen">13</option>
+                                            <option value="fourteen">14</option>
+                                            <option value="fifteen">15</option>
+                                            <option value="sixteen">16</option>
+                                            <option value="seventeen">17</option>
+                                            <option value="eighteen">18</option>
+                                            <option value="nineteen">19</option>
+                                            <option value="twenty">20</option>
+                                            <option value="twentyOne">21</option>
+                                            <option value="twentyTwo">22</option>
+                                            <option value="twentyThree">23</option>
+                                            <option value="twentyFour">24</option>
+                                            <option value="twentyFive">25</option>
+                                            <option value="twentySix">26</option>
+                                            <option value="twentySeven">27</option>
+                                            <option value="twentyEight">28</option>
+                                        </select>
                                         <br>
                                     </div>
                                 </div>
                             </div>
-                <div class="form-group">
-                <div class="col-lg-1 col-lg-offset-1">
-                    <button type="restart" class="btn btn-danger btn-sm">Restart</button>
-                    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                            <div class="form-group">
+                                <div class="col-lg-1 col-lg-offset-1">
+                                    <button type="clear" class="btn btn-danger btn-sm clearButton" id="clearButton">Clear</button>
+                                    <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit</button>
+                                </div>
+                            </div>
                 </div>
-            </div>
-            </div>
 
 
 
-            <!-- <div class="row">
+                <!-- <div class="row">
                 <div class="form-group">
                     <label for="select" class="control-label"><h5>Hash Marks</h5></label>
                     <div class="selWidth">
@@ -155,12 +155,12 @@
             </div> -->
 
 
-            </fieldset>
-            </form>
+                </fieldset>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
 
 
-@stop
+    @stop
