@@ -1,7 +1,10 @@
 @section('title') On My Dot @endsection @extends('layout') @section('content')
+
 <div class="container">
 
-    <div class="h1">I'm on my dot</h1><br>
+    <div class="titleCenter">
+        <div class="h1">OnMyDot.Com</h1><br>
+        </div>
     </div>
 
     <div class="row">
