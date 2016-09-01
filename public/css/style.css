@@ -1,9 +1,3 @@
-/*.boxSize {
-    width: 50%;
-    margin-left: 25%;
-}*/
-
-
 .form-group {
    padding-left: 20px;
 
@@ -11,10 +5,18 @@
 
 .clickyThings {
     padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
 }
 
-/*.checks {
-    width: 10%;
-    margin-left: 45%;
+.grid{
+    margin-bottom: 15px;
+}
 
+.stuffandthings {
+   margin-top: 15px;
+}
+
+/*.setList {
+    padding-right: 10px;
 }*/
