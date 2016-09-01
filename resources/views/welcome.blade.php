@@ -14,7 +14,7 @@
             </div>
             <div class="setList">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="http://placehold.it/350x350/ffffff/000000?text=Set List Goes Here">
+                    <img src="http://placehold.it/350x350/ffffff/000000?text=Dot List Goes Here">
                 </div>
             </div>
         </div>
