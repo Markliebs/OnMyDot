@@ -22,15 +22,12 @@
             <h3 class="panel-title">Enter a new set</h3>
         </div>
         <div class="panel-body">
-
-            <div class="boxSize" id="boxSize">
-
                 <div class="row">
                     <form class="form-horizontal">
                         <fieldset>
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Side</h5></label>
+                                    <label for="select" class="control-label"><h5>Field Side</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" id="selectSide">
                                         <option value="one">1</option>
@@ -40,7 +37,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Yard Line</h5></label>
                                     <div class="selWidth">
@@ -62,7 +59,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>In or Out</h5></label>
                                     <div class="selWidth">
@@ -75,9 +72,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Steps Off Line</h5></label>
+                                    <label for="select" class="control-label"><h5>Steps Off</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" id="distanceFromYardline">
                                             <option value="one">1</option>
@@ -90,13 +87,36 @@
                                 </div>
                             </div>
 
-
-
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Front/Back</h5></label>
+                                    <label for="select" class="control-label"><h5>Hash Mark</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="distanceFromSideline">
+                                        <select class="form-control" id="hashMark">
+                                            <option value="front">Front</option>
+                                            <option value="back">Back</option>                                        </select>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                                <div class="form-group">
+                                    <label for="select" class="control-label"><h5>Front-Back</h5></label>
+                                    <div class="selWidth">
+                                        <select class="form-control" id="fOrb">
+                                            <option value="front">Front</option>
+                                            <option value="back">Back</option>                                        </select>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                                <div class="form-group">
+                                    <label for="select" class="control-label"><h5>Steps from</h5></label>
+                                    <div class="selWidth">
+                                        <select class="form-control" id="stepsFromHash">
                                             <option value="one">1</option>
                                             <option value="two">2</option>
                                             <option value="three">3</option>
@@ -130,10 +150,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-lg-1 col-lg-offset-1">
-                                    <button type="clear" class="btn btn-danger btn-sm clearButton" id="clearButton">Clear</button>
-                                    <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit</button>
+                            <div class="form-group clickyThings">
+                                <div class="col-lg-1">
+                                    <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit Dot</button>
+                                    <button type="clear" class="btn btn-danger btn-sm clearButton" id="clearButton">Clear  Form</button>
                                 </div>
                             </div>
                 </div>
@@ -157,10 +177,13 @@
 
                 </fieldset>
                 </form>
-            </div>
         </div>
     </div>
 
 
 
     @stop
+
+
+{{-- 
+     col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1 --}}

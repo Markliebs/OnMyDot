@@ -1,16 +1,19 @@
 /*.boxSize {
     width: 50%;
     margin-left: 25%;
+}*/
+
+
+.form-group {
+   padding-left: 20px;
+
 }
 
-
-.selWidth {
-   width: 10%;
-   margin-left: 45%;
-
+.clickyThings {
+    padding-top: 20px;
 }
 
-.checks {
+/*.checks {
     width: 10%;
     margin-left: 45%;
 
