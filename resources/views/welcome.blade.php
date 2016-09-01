@@ -103,7 +103,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-2 col-xl-2">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3">
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Front-Back</h5></label>
                                     <div class="selWidth">
@@ -115,7 +115,7 @@
                                 </div>
                             </div>
 
-                                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3">
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Steps from</h5></label>
                                     <div class="selWidth">
