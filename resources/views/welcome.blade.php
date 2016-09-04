@@ -27,7 +27,7 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <form class="form-horizontal">
+                    <form action="store" method="POST" class="form-horizontal">
                         <fieldset>
                             <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
                                 <div class="form-group">
