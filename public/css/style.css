@@ -26,6 +26,24 @@
    width: 100%;
 }
 
+
+.col-xs-12 {
+text-align: center;
+} 
+
+col-sm-12 {
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 .button {
     width: 120px;
     margin-top: 1px;
