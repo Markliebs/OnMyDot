@@ -5,3 +5,7 @@
 Homestead.json
 Homestead.yaml
 .env
+.project
+.buildpath
+/.settings
+/.idea
