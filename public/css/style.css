@@ -28,13 +28,13 @@
 }
 
 
-/*.col-xs-12 {
+.col-xs-12 {
 text-align: center;
 } 
 
-col-sm-12 {
+.col-sm-12 {
 text-align: center;
-}*/
+}
 
 .btn {
     width: 120px;
