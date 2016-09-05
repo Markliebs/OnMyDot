@@ -15,6 +15,7 @@
     padding-top: 20px;
     padding-left: 20px;
     margin-left: 20px;
+    align-content: center
 }
 
 .grid{
@@ -27,27 +28,26 @@
 }
 
 
-.col-xs-12 {
+/*.col-xs-12 {
 text-align: center;
 } 
 
 col-sm-12 {
 text-align: center;
-}
+}*/
 
-
-
-
-
-
-
-
-
-
-.button {
+.btn {
     width: 120px;
     margin-top: 1px;
 }
+
+
+
+
+
+
+
+
 
 
 .button span {
