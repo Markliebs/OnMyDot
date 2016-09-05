@@ -7,7 +7,7 @@ use dotsDB;
 drop table if exists dotTable;
 
 create table if not exists dotTable (
-    userID integer primary key auto_increment,
+    pageNumber INT NOT NULL AUTO_INCREMENT,
     ss varchar(1),
     sl varchar(2),
     si varchar(7),
@@ -15,4 +15,5 @@ create table if not exists dotTable (
     hm varchar(5),
     fb varchar(5),
     sfh varchar(2),
+    PRIMARY KEY ('pageNumber'),
 )
