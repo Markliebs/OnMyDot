@@ -153,16 +153,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group clickyThings">
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
-                                    <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Send to DotBook</button>
-                                    <button type="clear" class="btn btn-danger btn-sm clearButton" id="clearButton">Clear the Data</button>
-                                    <button type="dots" class="btn btn-primary btn-sm dotButton" id="dotButton">Go to DotBook</button>
-                                </div>
-                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="form-group clickyThings">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                            <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Send to DotBook</button>
+                            <button type="clear" class="btn btn-danger btn-sm clearButton" id="clearButton">Clear the Data</button>
+                            <button type="dots" class="btn btn-primary btn-sm dotButton" id="dotButton">Go to DotBook</button>
+                        </div>
+                    </div>
                 </div>
-                </fieldset>
-                </form>
+
             </div>
         </div>
     </div>

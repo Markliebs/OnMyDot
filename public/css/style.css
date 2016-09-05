@@ -43,14 +43,7 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-
-.button span {
+/*.button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -73,4 +66,4 @@ text-align: center;
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
+}*/
