@@ -1,16 +1,28 @@
-@section('title') On My Dot @endsection @extends('layout') @section('content')
+@extends('layouts.app')
+
+@section('content')
+
+<head>
+    <link rel="stylesheet" href="/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="/js/click.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">-->
+</head>
 
 <div class="container">
 
-    <div class="titleCenter">
+    {{-- <div class="titleCenter">
         <div class="h1">OnMyDot.Com</h1><br>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row">
         <div class="grid">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
+                <img src="http://placehold.it/750x350/24911f/000000?text=Football Field Grid Goes Here">
             </div>
             <div class="setList">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
@@ -167,7 +179,4 @@
             </div>
         </div>
     </div>
-
-
-
-    @stop
+@endsection
