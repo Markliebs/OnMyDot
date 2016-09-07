@@ -16,4 +16,7 @@ create table if not exists dotTable (
     fb varchar(5),
     sfh varchar(2),
     PRIMARY KEY ('pageNumber'),
-)
+);
+
+-- mysql://b105afb0ce2a19:efeccca9@us-cdbr-iron-east-04.cleardb.net/heroku_b673b0d203cfce7?reconn
+-- ect=true   
