@@ -146,20 +146,6 @@
                                             <option value="twelve">12</option>
                                             <option value="thirteen">13</option>
                                             <option value="fourteen">14</option>
-                                            <option value="fifteen">15</option>
-                                            <option value="sixteen">16</option>
-                                            <option value="seventeen">17</option>
-                                            <option value="eighteen">18</option>
-                                            <option value="nineteen">19</option>
-                                            <option value="twenty">20</option>
-                                            <option value="twentyOne">21</option>
-                                            <option value="twentyTwo">22</option>
-                                            <option value="twentyThree">23</option>
-                                            <option value="twentyFour">24</option>
-                                            <option value="twentyFive">25</option>
-                                            <option value="twentySix">26</option>
-                                            <option value="twentySeven">27</option>
-                                            <option value="twentyEight">28</option>
                                         </select>
                                         <br>
                                     </div>
