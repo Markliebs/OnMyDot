@@ -4,11 +4,6 @@
 
 <div class="container">
 
-    {{-- <div class="titleCenter">
-        <div class="h1">OnMyDot.Com</h1><br>
-        </div>
-    </div> --}}
-
     <div class="row">
         <div class="grid">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
