@@ -8,3 +8,4 @@ Homestead.yaml
 .buildpath
 /.settings
 /.idea
+.env
