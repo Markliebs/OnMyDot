@@ -24,13 +24,13 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <form action="store" method="POST" class="form-horizontal">
+                    <form action="/dotLog" method="POST" class="form-horizontal">
                         <fieldset>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Field Side</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="selectSide">
+                                        <select class="form-control" name="selectSide" id="selectSide">
                                         <option value="one">1</option>
                                         <option value="two">2</option>
                                         </select>
@@ -42,7 +42,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Yard Line</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="selectLine">
+                                        <select class="form-control" name "selectLine" id="selectLine">
                                     <option value="goal">0</option>
                                     <option value="five">5</option>
                                     <option value="ten">10</option>
@@ -64,7 +64,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>In or Out</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="selectIn">
+                                        <select class="form-control" name="selectIn" id="selectIn">
                                     <option value="inside">Inside</option>
                                     <option value="outside">Outside</option>
                                 </select>
@@ -77,7 +77,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Steps Off</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="distanceFromYardline">
+                                        <select class="form-control" name="distanceFromYardline" id="distanceFromYardline">
                                             <option value="one">1</option>
                                             <option value="two">2</option>
                                             <option value="three">3</option>
@@ -92,7 +92,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Hash Mark</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="hashMark">
+                                        <select class="form-control" name="hashMark" id="hashMark">
                                             <option value="front">Front</option>
                                             <option value="back">Back</option>                                        </select>
                                         <br>
@@ -104,7 +104,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Front-Back</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="fOrb">
+                                        <select class="form-control" name "fOrb" id="fOrb">
                                             <option value="front">Front</option>
                                             <option value="back">Back</option>                                        </select>
                                         <br>
@@ -116,7 +116,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Steps from</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" id="stepsFromHash">
+                                        <select class="form-control" name="stepsFromHash" id="stepsFromHash">
                                             <option value="one">1</option>
                                             <option value="two">2</option>
                                             <option value="three">3</option>
