@@ -24,7 +24,9 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <form action="{{ url('/dotLog') }}" method="POST" class="form-horizontal">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/dotLog') }}">
+                        {{ csrf_field() }}
+                    {{-- <form action="{{ url('/dotLog') }}" method="POST" class="form-horizontal"> --}}
                         <fieldset>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
