@@ -41,7 +41,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Yard Line</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" name "selectLine" id="selectLine">
+                                <select class="form-control" name "selectLine" id="selectLine">
                                     <option value="goal">0</option>
                                     <option value="five">5</option>
                                     <option value="ten">10</option>
@@ -63,7 +63,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>In or Out</h5></label>
                                     <div class="selWidth">
-                                        <select class="form-control" name="selectIn" id="selectIn">
+                                <select class="form-control" name="selectIn" id="selectIn">
                                     <option value="inside">Inside</option>
                                     <option value="outside">Outside</option>
                                 </select>
@@ -141,7 +141,7 @@
                     <div class="form-group">
                         <div class="clickyThings">
                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-1 col-xl-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
-                                <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Send to DotBook</button> 
+                                <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Send to DotBook</button>
                                 <button type="dots" class="btn btn-primary btn-sm dotButton" id="dotButton">Go to DotBook</button>
                             </div>
                         </div>
