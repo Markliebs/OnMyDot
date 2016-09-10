@@ -37,7 +37,7 @@
                                         <option value="one">1</option>
                                         <option value="two">2</option>
                                         </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                         
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                     <option value="fortyFive">45</option>
                                     <option value="fifty">50</option>
                                     </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                                     <option value="inside">Inside</option>
                                     <option value="outside">Outside</option>
                                 </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                     </div>
                                 </div>
                             </div>
@@ -87,14 +87,14 @@
                                     {{-- <label for="select" class="control-label"><h5>Steps Off</h5></label> --}}
                                     <div class="selWidth">
                                         {!! Form::label('distanceFromYardLine', 'Steps Off') !!}<br />
-                                        {!! Form::select('distanceFromYardLine', ['one' => '1', 'two' => '2', 'three' => '3', "four" => '4'], 'one'); !!}  
+                                        {!! Form::select('distanceFromYardLine', ['one' => '1', 'two' => '2', 'three' => '3', 'four' => '4'], 'one'); !!}  
                                         {{-- <select class="form-control" name="distanceFromYardline" id="distanceFromYardline">
                                             <option value="one">1</option>
                                             <option value="two">2</option>
                                             <option value="three">3</option>
                                             <option value="four">4</option>
                                         </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                     </div>
                                 </div>
                             </div>
@@ -104,12 +104,12 @@
                                     {{-- <label for="select" class="control-label"><h5>Hash Mark</h5></label> --}}
                                     <div class="selWidth">
                                         {!! Form::label('hashMark', 'Hash Mark') !!}<br />
-                                        {!! Form::select('hashMark', ['front' => 'Front', 'back' => 'Back'], 'Front'); !!}  
+                                        {!! Form::select('hashMark', ['front' => 'Front', 'back' => 'Back'], 'front'); !!}  
                                         {{-- <select class="form-control" name="hashMark" id="hashMark">
                                             <option value="front">Front</option>
                                             <option value="back">Back</option>
                                         </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                             <option value="front">Front</option>
                                             <option value="back">Back</option>
                                         </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
                                             <option value="thirteen">13</option>
                                             <option value="fourteen">14</option>
                                         </select> --}}
-                                        <br>
+                                        {{-- <br> --}}
                                     </div>
                                 </div>
                             </div>

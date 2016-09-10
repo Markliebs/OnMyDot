@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::post('/dotLog', 'DotsController@index');
+Route::post('/dotLog', 'DotsController@store');
 
-Route::resource('/dotLog', 'DotsController');
+Route::resource('/dotLog', 'DotsController@index');

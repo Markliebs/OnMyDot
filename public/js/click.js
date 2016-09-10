@@ -12,7 +12,7 @@ $(document).on('click', '.submitButton', function () {
     var ss = $('#selectSide').find(":selected").text();
     var sl = $('#selectLine').find(":selected").text();
     var si = $('#selectIn').find(":selected").text();
-    var dfl = $('#distanceFromYardline').find(":selected").text();
+    var dfl = $('#distanceFromYardLine').find(":selected").text();
     var hm = $('#hashMark').find(":selected").text();
     var fb = $('#fOrb').find(":selected").text();
     var sfh = $('#stepsFromHash').find(":selected").text();

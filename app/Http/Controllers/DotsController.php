@@ -16,13 +16,13 @@ class DotsController extends Controller
 	     */
 	    public function index()
 	    {
-		// return view('vendor.home');
+		return view('vendor.home');
 
          echo("Hello");
         echo $ss = $request->input('selectSide');
 		echo $sl = $request->input('selectLine');
 		echo $si = $request->input('selectIn');
-		echo $dfl = $request->input('distanceFromYardline');
+		echo $dfl = $request->input('distanceFromYardLine');
 		echo $hm = $request->input('hashMark');
 		echo $fb = $request->input('fOrb');
 		echo $sfh = $request->input('stepsFromHash');
@@ -36,7 +36,18 @@ class DotsController extends Controller
 	     */
 	    public function create()
 	    {
-		//
+		{
+		return view('vendor.home');
+
+         echo("Hello");
+        echo $ss = $request->input('selectSide');
+		echo $sl = $request->input('selectLine');
+		echo $si = $request->input('selectIn');
+		echo $dfl = $request->input('distanceFromYardLine');
+		echo $hm = $request->input('hashMark');
+		echo $fb = $request->input('fOrb');
+		echo $sfh = $request->input('stepsFromHash');
+	}
 	}
 	
 	
@@ -51,7 +62,7 @@ class DotsController extends Controller
 		$ss = $request->input('selectSide');
 		$sl = $request->input('selectLine');
 		$si = $request->input('selectIn');
-		$dfl = $request->input('distanceFromYardline');
+		$dfl = $request->input('distanceFromYardLine');
 		$hm = $request->input('hashMark');
 		$fb = $request->input('fOrb');
 		$sfh = $request->input('stepsFromHash');
