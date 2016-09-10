@@ -22,11 +22,15 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/dotLog') }}">
+                    {{-- <form class="form-horizontal" role="form" method="POST" action="{{ url('/dotLog') }}"> --}}
+                   {!! echo Form::open(['route' => 'route.name']) }!!
                         {{ csrf_field() }}
                         <fieldset>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                                <div class="form-group">
+
+
+                                
+                                {{-- <div class="form-group">
                                     <label for="select" class="control-label"><h5>Field Side</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectSide" id="selectSide">
@@ -35,7 +39,7 @@
                                         </select>
                                         <br>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
