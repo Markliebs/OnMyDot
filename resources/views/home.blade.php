@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    {<label for="select" class="control-label"><h5>Yard Line</h5></label>
+                                    <label for="select" class="control-label"><h5>Yard Line</h5></label>
                                     <div class="selWidth">
                                         {{-- {!! Form::label('selectLine', 'Yard Line') !!}<br />
                                         {!! Form::select('selectLine', ['goal' => '0', 'five' => '5', 'ten' => '10', 'fifteen' => '20', "twentyFive" => '25', 'thirty' => '30', 'thirtyFive' => '35', 'forty' => '40', 'fortyFive' => '45', 'fifty' => '50'], 'goal'); !!}      --}}
