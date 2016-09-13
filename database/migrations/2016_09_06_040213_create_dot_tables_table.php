@@ -13,7 +13,7 @@ class CreateDotTablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('dot_tables', function (Blueprint $table) {
+        Schema::create('dottables', function (Blueprint $table) {
             $table->increments('pageNumber');
             $table->string('ss');
             $table->string('sl');
@@ -33,6 +33,6 @@ class CreateDotTablesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('dot_tables');
+        Schema::drop('dottables');
     }
 }
