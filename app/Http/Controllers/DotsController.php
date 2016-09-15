@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -14,35 +16,33 @@ class DotsController extends Controller
 	
 	
 	
+	
+	
+	
 	/**
 	* Display a listing of the resource.
-				     *
-				     * @return \Illuminate\Http\Response
-				     */
-				    public function index()
-				    {
-		return view('vendor.home');
+							     *
+							     * @return \Illuminate\Http\Response
+							     */
+							    public function index()
+							    {
+		$DotTables = DB::table('dottables')->get();
+
+		 printf('<pre>%s</pre>', print_r($DotTables, 1));
 		
-		echo("Hello");
-		echo $ss = $request->input('selectSide');
-		echo $sl = $request->input('selectLine');
-		echo $si = $request->input('selectIn');
-		echo $dfl = $request->input('distanceFromYardLine');
-		echo $hm = $request->input('hashMark');
-		echo $fb = $request->input('fOrb');
-		echo $sfh = $request->input('stepsFromHash');
+		return view('d/home', compact('DotTables'));
 	}
-	
 	
 	
 	
 	
 	/**
 	* Show the form for creating a new resource.
-				     *
-				     * @return \Illuminate\Http\Response
-				     */
-				    public function create(Request $request){
+							     *
+							     * @return \Illuminate\Http\Response
+							     */
+							    public function create(Request $request){
+		
 		// 		get all the data that has been posted from the form
 		
 		$post_data = $request->all();
@@ -63,18 +63,14 @@ class DotsController extends Controller
 	
 	
 	
-	
-	
-	
-	
 	/**
 	Store a newly created resource in storage.
-			     *
-			     * @param  \Illuminate\Http\Request  $request
-			     * @return \Illuminate\Http\Response
-			     */
-			    public function store(Request $request)
-			    {
+						     *
+						     * @param  \Illuminate\Http\Request  $request
+						     * @return \Illuminate\Http\Response
+						     */
+						    public function store(Request $request)
+						    {
 		$ss = $request->input('selectSide');
 		$sl = $request->input('selectLine');
 		$si = $request->input('selectIn');
@@ -88,16 +84,22 @@ class DotsController extends Controller
 	
 	
 	
+	
+	
+	
 	/**
 	Display the specified resource.
-			     *
-			     * @param  int  $id
-			     * @return \Illuminate\Http\Response
-			     */
-			    public function show($id)
-			    {
+						     *
+						     * @param  int  $id
+						     * @return \Illuminate\Http\Response
+						     */
+						    public function show($id)
+						    {
 		//
 	}
+	
+	
+	
 	
 	
 	
@@ -105,14 +107,17 @@ class DotsController extends Controller
 	
 	/**
 	Show the form for editing the specified resource.
-			     *
-			     * @param  int  $id
-			     * @return \Illuminate\Http\Response
-			     */
-			    public function edit($id)
-			    {
+						     *
+						     * @param  int  $id
+						     * @return \Illuminate\Http\Response
+						     */
+						    public function edit($id)
+						    {
 		//
 	}
+	
+	
+	
 	
 	
 	
@@ -120,13 +125,13 @@ class DotsController extends Controller
 	
 	/**
 	Update the specified resource in storage.
-			     *
-			     * @param  \Illuminate\Http\Request  $request
-			     * @param  int  $id
-			     * @return \Illuminate\Http\Response
-			     */
-			    public function update(Request $request, $id)
-			    {
+						     *
+						     * @param  \Illuminate\Http\Request  $request
+						     * @param  int  $id
+						     * @return \Illuminate\Http\Response
+						     */
+						    public function update(Request $request, $id)
+						    {
 		//
 	}
 	
@@ -134,14 +139,17 @@ class DotsController extends Controller
 	
 	
 	
+	
+	
+	
 	/**
 	Remove the specified resource from storage.
-			     *
-			     * @param  int  $id
-			     * @return \Illuminate\Http\Response
-			     */
-			    public function destroy($id)
-			    {
+						     *
+						     * @param  int  $id
+						     * @return \Illuminate\Http\Response
+						     */
+						    public function destroy($id)
+						    {
 		//
 	}
 }

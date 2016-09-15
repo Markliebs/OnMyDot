@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\DB;
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +25,15 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+        $DotTables = DB::table('DotTables')->get();
+
+	//  printf('<pre>%s</pre>', print_r($DotTables, 1));
+		
+		return view('home', compact('DotTables'));
+
         return view('home');
     }
+    
 }
+

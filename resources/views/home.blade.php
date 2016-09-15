@@ -9,7 +9,19 @@
             </div>
             <div class="setList">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="http://placehold.it/350x350/ffffff/000000?text=Dot List Goes Here">
+                    <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">5 latest Dots</h3>
+                </div>
+            <div class="panel-body">
+                <p>Side</p>
+                     <ul>
+                     @foreach ($DotTables as $DotTable)
+                        <li>{{{ $DotTable->ss }}}</li>
+                     @endforeach
+                    </ul>
+            </div>
+                    </div>
                 </div>
             </div>
         </div>
