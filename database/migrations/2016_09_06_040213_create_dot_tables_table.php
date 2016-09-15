@@ -14,7 +14,7 @@ class CreateDotTablesTable extends Migration
     public function up()
     {
         Schema::create('dottables', function (Blueprint $table) {
-            $table->increments('pageNumber');
+            $table->string('pn');
             $table->string('ss');
             $table->string('sl');
             $table->string('si');
