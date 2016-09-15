@@ -16,7 +16,7 @@
                             <br>
                             <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
                             <?php if($count == 5) break; ?>
-                            <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
+                            <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} <br> Field Side: {{{ $DotTable->ss }}}</li>
                             <br>
                             <?php $count++; ?> @endforeach
                     </ul>
