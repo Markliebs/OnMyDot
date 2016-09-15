@@ -8,26 +8,18 @@
                 <img src="/pics/cfbfield.gif">
             </div>
             <div class="setList">
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    {{--
-                    <div class="panel panel-success">
-                        <div class="panel-heading"> --}} {{--
-                            <div class="alert alert-dismissible alert-success"> --}}
-                                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 most recently entered dots will appear here"
-                                    data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>                                {{-- </div> --}} {{--
-                            <div class="panel-body">
-                                --}}
-
-                                <ul class="list-group">
-                                    <div class="selWidth">
-                                        <br>
-                                        <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
-                                        <?php if($count == 5) break; ?>
-                                        <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
-                                        <br>
-                                        <?php $count++; ?> @endforeach
-                                </ul>
-                                {{-- </div> --}} {{-- </div> --}} {{-- </div> --}}
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 most recently entered dots will appear here"
+                        data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>
+                    <ul class="list-group">
+                        <div class="selWidth">
+                            <br>
+                            <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
+                            <?php if($count == 5) break; ?>
+                            <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
+                            <br>
+                            <?php $count++; ?> @endforeach
+                    </ul>
                     </div>
                 </div>
             </div>
