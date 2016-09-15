@@ -11,22 +11,22 @@
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     {{-- <div class="panel panel-success">
                         <div class="panel-heading"> --}}
-                            <div class="alert alert-dismissible alert-success">
-                            <h3 class="panel-title">5 Latest Dots</h3>
+                            {{-- <div class="alert alert-dismissible alert-success"> --}}
+                            <a href="#" class="list-group-item active">5 Latest Dots</a>
                         {{-- </div> --}}
                         {{-- <div class="panel-body"> --}}
                             
-                            <ul>
+                            <ul class="list-group">
                                 <br>
                                 <?php $count = 0; ?>
                                 @foreach ($DotTables as $DotTable)
                                 <?php if($count == 5) break; ?>
-                                <li>Page Number: {{{ $DotTable->pageNumber }}}  Field Side: {{{ $DotTable->ss }}}</li>
+                                <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}}  Field Side: {{{ $DotTable->ss }}}</li>
                                 <br>
                                 <?php $count++; ?>
                                 @endforeach
                             </ul>
-                            </div>
+                            {{-- </div> --}}
                         {{-- </div> --}}
                     {{-- </div> --}}
                 </div>
