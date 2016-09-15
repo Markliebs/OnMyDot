@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        $DotTables = DB::table('DotTables')->get();
+        $DotTables = DB::table('DotTables')->orderBy('created_at', 'desc')->get();
 
 	//  printf('<pre>%s</pre>', print_r($DotTables, 1));
 		
