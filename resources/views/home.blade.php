@@ -14,6 +14,7 @@
                             <h3 class="panel-title">5 Latest Dots</h3>
                         </div>
                         <div class="panel-body">
+                            <div class="well">
                             <ul>
                                 <br>
                                 <?php $count = 0; ?>
@@ -21,10 +22,10 @@
                                 <?php if($count == 5) break; ?>
                                 <li>Page Number: {{{ $DotTable->pageNumber }}}  Field Side: {{{ $DotTable->ss }}}</li>
                                 <br>
-                                {{-- <li> Field Side: {{{ $DotTable->ss }}}</li> --}}
                                 <?php $count++; ?>
                                 @endforeach
                             </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
