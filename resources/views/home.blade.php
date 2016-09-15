@@ -13,7 +13,7 @@
                     <div class="panel panel-success">
                         <div class="panel-heading"> --}} {{--
                             <div class="alert alert-dismissible alert-success"> --}}
-                                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5dots" data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a> {{-- </div> --}} {{--
+                                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 most recently entered dots will appear here" data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a> {{-- </div> --}} {{--
                             <div class="panel-body">
                             --}}
 
