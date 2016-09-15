@@ -12,7 +12,7 @@
                     {{-- <div class="panel panel-success">
                         <div class="panel-heading"> --}}
                             {{-- <div class="alert alert-dismissible alert-success"> --}}
-                            <a href="#" class="list-group-item active">5 Latest Dots</a>
+                            <a href="/dotLog" class="list-group-item active">5 Latest Dots</a>
                         {{-- </div> --}}
                         {{-- <div class="panel-body"> --}}
                             
