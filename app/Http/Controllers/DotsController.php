@@ -53,7 +53,7 @@ class DotsController extends Controller
 		$DotTable->fb = $post_data['fOrb'];
 		$DotTable->sfh = $post_data['stepsFromHash'];
 		$DotTable->save();
-		$DotTables = DB::table('DotTables')->orderBy('pageNumber', 'desc')->get();
+		$DotTables = DB::table('DotTables')->orderBy('created_at', 'desc')->get();
 		return view('home', compact('DotTables'));
 	}
 	
