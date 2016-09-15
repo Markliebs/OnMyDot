@@ -46,7 +46,7 @@
                                 <div class="form-group">
                                     <div class="selWidth">
                                         <label class="control-label" for="focusedInput name="pageNumber" id="pageNumber"">Page Number</label>
-                                        <input class="form-control" id="focusedInput" type="text" value="Can be solid sets (15) or sub-sets (15a)">
+                                        <input class="form-control" id="focusedInput" type="text" value="Solid Sets or Sub Sets" disabled="">
                                     </div>
                                 </div>
                             </div>
