@@ -12,12 +12,7 @@ use App;
 
 class DotsController extends Controller
 {
-	
-	
-	
-	
-	
-	
+
 	
 	/**
 	* Display a listing of the resource.
@@ -26,11 +21,11 @@ class DotsController extends Controller
 							     */
 							    public function index()
 							    {
-		$DotTables = DB::table('dottables')->get();
+		$DotTables = DB::table('DotTables')->get();
 
-		 printf('<pre>%s</pre>', print_r($DotTables, 1));
+		//  printf('<pre>%s</pre>', print_r($DotTables, 1));
 		
-		return view('d/home', compact('DotTables'));
+		return view('home', compact('DotTables'));
 	}
 	
 	
@@ -58,7 +53,8 @@ class DotsController extends Controller
 		$DotTable->fb = $post_data['fOrb'];
 		$DotTable->sfh = $post_data['stepsFromHash'];
 		$DotTable->save();
-		return view('/home');
+		$DotTables = DB::table('DotTables')->orderBy('pageNumber', 'desc')->get();
+		return view('home', compact('DotTables'));
 	}
 	
 	
@@ -71,13 +67,13 @@ class DotsController extends Controller
 						     */
 						    public function store(Request $request)
 						    {
-		$ss = $request->input('selectSide');
-		$sl = $request->input('selectLine');
-		$si = $request->input('selectIn');
-		$dfl = $request->input('distanceFromYardLine');
-		$hm = $request->input('hashMark');
-		$fb = $request->input('fOrb');
-		$sfh = $request->input('stepsFromHash');
+		// $ss = $request->input('selectSide');
+		// $sl = $request->input('selectLine');
+		// $si = $request->input('selectIn');
+		// $dfl = $request->input('distanceFromYardLine');
+		// $hm = $request->input('hashMark');
+		// $fb = $request->input('fOrb');
+		// $sfh = $request->input('stepsFromHash');
 	}
 	
 	

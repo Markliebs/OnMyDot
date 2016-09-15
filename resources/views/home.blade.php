@@ -10,17 +10,22 @@
             <div class="setList">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="panel panel-success">
-            <div class="panel-heading">
-                <h3 class="panel-title">5 latest Dots</h3>
-                </div>
-            <div class="panel-body">
-                <p>Side</p>
-                     <ul>
-                     @foreach ($DotTables as $DotTable)
-                        <li>{{{ $DotTable->ss }}}</li>
-                     @endforeach
-                    </ul>
-            </div>
+                        <div class="panel-heading">
+                            <h3 class="panel-title">5 Latest Dots</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <br>
+                                <?php $count = 0; ?>
+                                @foreach ($DotTables as $DotTable)
+                                <?php if($count == 5) break; ?>
+                                <li>Page Number: {{{ $DotTable->pageNumber }}}  Field Side: {{{ $DotTable->ss }}}</li>
+                                <br>
+                                {{-- <li> Field Side: {{{ $DotTable->ss }}}</li> --}}
+                                <?php $count++; ?>
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,8 +47,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Field Side</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('selectSide', 'Field Side') !!}<br /> {!! Form::select('selectSide',
-                                        ['one' => '1', 'two' => '2'], 'one'); !!} --}}
+                                        {{-- {!! Form::label('selectSide', 'Field Side') !!}<br /> {!! Form::select('selectSide', ['one' => '1', 'two' => '2'], 'one'); !!} --}}
                                         <select class="form-control" name="selectSide" id="selectSide">
                                         <option value="one">1</option>
                                         <option value="two">2</option>
@@ -57,10 +61,8 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Yard Line</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('selectLine', 'Yard Line') !!}<br /> {!! Form::select('selectLine',
-                                        ['goal' => '0', 'five' => '5', 'ten' => '10', 'fifteen' => '20', "twentyFive" =>
-                                        '25', 'thirty' => '30', 'thirtyFive' => '35', 'forty' => '40', 'fortyFive' => '45',
-                                        'fifty' => '50'], 'goal'); !!} --}}
+                                        {{-- {!! Form::label('selectLine', 'Yard Line') !!}<br /> {!! Form::select('selectLine', ['goal' => '0', 'five' => '5', 'ten' => '10', 'fifteen' => '20', "twentyFive" => '25', 'thirty' => '30', 'thirtyFive' => '35',
+                                        'forty' => '40', 'fortyFive' => '45', 'fifty' => '50'], 'goal'); !!} --}}
 
                                         <select class="form-control" name="selectLine" id="selectLine">
                                     <option value="goal">0</option>
@@ -84,8 +86,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>In or Out</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('selectIn', 'In or Out') !!}<br /> {!! Form::select('selectIn',
-                                        ['inside' => 'Inside', 'outside' => 'Outside'], 'inside'); !!} --}}
+                                        {{-- {!! Form::label('selectIn', 'In or Out') !!}<br /> {!! Form::select('selectIn', ['inside' => 'Inside', 'outside' => 'Outside'], 'inside'); !!} --}}
                                         <select class="form-control" name="selectIn" id="selectIn">
                                     <option value="inside">Inside</option>
                                     <option value="outside">Outside</option>
@@ -99,8 +100,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Steps Off</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('distanceFromYardLine', 'Steps Off') !!}<br /> {!! Form::select('distanceFromYardLine',
-                                        ['one' => '1', 'two' => '2', 'three' => '3', 'four' => '4'], 'one'); !!} --}}
+                                        {{-- {!! Form::label('distanceFromYardLine', 'Steps Off') !!}<br /> {!! Form::select('distanceFromYardLine', ['one' => '1', 'two' => '2', 'three' => '3', 'four' => '4'], 'one'); !!} --}}
                                         <select class="form-control" name="distanceFromYardLine" id="distanceFromYardLine">
                                             <option value="one">1</option>
                                             <option value="two">2</option>
@@ -116,8 +116,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Hash Mark</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('hashMark', 'Hash Mark') !!}<br /> {!! Form::select('hashMark',
-                                        ['front' => 'Front', 'back' => 'Back'], 'front'); !!} --}}
+                                        {{-- {!! Form::label('hashMark', 'Hash Mark') !!}<br /> {!! Form::select('hashMark', ['front' => 'Front', 'back' => 'Back'], 'front'); !!} --}}
                                         <select class="form-control" name="hashMark" id="hashMark">
                                             <option value="front">Front</option>
                                             <option value="back">Back</option>
@@ -131,8 +130,7 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Front-Back</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('fOrb', 'Front-Back') !!}<br /> {!! Form::select('fOrb', ['front'
-                                        => 'Front', 'back' => 'Back'], 'Front'); !!} --}}
+                                        {{-- {!! Form::label('fOrb', 'Front-Back') !!}<br /> {!! Form::select('fOrb', ['front' => 'Front', 'back' => 'Back'], 'Front'); !!} --}}
                                         <select class="form-control" name="fOrb" id="fOrb">
                                             <option value="front">Front</option>
                                             <option value="back">Back</option>
@@ -146,10 +144,8 @@
                                 <div class="form-group">
                                     <label for="select" class="control-label"><h5>Steps from</h5></label>
                                     <div class="selWidth">
-                                        {{-- {!! Form::label('stepsFromHash', 'Steps from') !!}<br /> {!! Form::select('stepsFromHash',
-                                        ['one' => '1', 'two' => '2', 'three' => '3', 'four' => '4', "five" => '5', 'six'
-                                        => '6', 'seven' => '7', 'eight' => '8', 'nine' => '9', 'ten' => '10', 'eleven' =>
-                                        '11', 'twelve' => '12', 'thirteen' => '13', 'fourteen' => '14'], 'goal'); !!} --}}
+                                        {{-- {!! Form::label('stepsFromHash', 'Steps from') !!}<br /> {!! Form::select('stepsFromHash', ['one' => '1', 'two' => '2', 'three' => '3', 'four' => '4', "five" => '5', 'six' => '6', 'seven' => '7', 'eight' =>
+                                        '8', 'nine' => '9', 'ten' => '10', 'eleven' => '11', 'twelve' => '12', 'thirteen' => '13', 'fourteen' => '14'], 'goal'); !!} --}}
 
                                         <select class="form-control" name="stepsFromHash" id="stepsFromHash">
                                             <option value="one">1</option>
@@ -177,8 +173,7 @@
                             <div class="clickyThings">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        {{-- {!! Form::submit('Send to DotBook', array('class' => 'btn btn-success btn-sm submitButton')) !!} {!! Form::submit('Go
-                                        to DotBook', array('class' => 'btn btn-primary btn-sm dotButton')) !!} --}}
+                                        {{-- {!! Form::submit('Send to DotBook', array('class' => 'btn btn-success btn-sm submitButton')) !!} {!! Form::submit('Go to DotBook', array('class' => 'btn btn-primary btn-sm dotButton')) !!} --}}
                                         <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Send to DotBook</button>
                                         <button type="dots" class="btn btn-primary btn-sm dotButton" id="dotButton">Go to DotBook</button>
                                     </div>
