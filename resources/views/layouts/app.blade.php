@@ -70,11 +70,16 @@
                             </a>
 
                         <ul class="dropdown-menu" role="menu">
+                            <br>
+                            <li><a href="/home">Enter A New Dot</a></li>
+                            <li><a href="/dotbook">Dot Book</a></li>
+                            <hr>
                             <li>
                                 <a href="{{ url('/logout') }}" onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
+                                    
 
                                 <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}

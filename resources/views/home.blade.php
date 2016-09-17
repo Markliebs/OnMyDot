@@ -15,7 +15,7 @@
                     <br>
                     <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
                     <?php if($count == 5) break; ?>
-                    <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Counts: {{{ $DotTable->counts }}}</li>
+                    <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} &nbsp;&nbsp;Counts: {{{ $DotTable->counts }}}</li>
                     <br>
                     <?php $count++; ?> @endforeach
                 </ul>
@@ -58,8 +58,8 @@
                                     <label for="select" class="control-label"><h5><b>Field Side</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectSide" id="selectSide">
-                                        <option value="One">1</option>
-                                        <option value="Two">2</option>
+                                        <option value="One">1 (Audience Left)</option>
+                                        <option value="Two">2 (Audience Right)</option>
                                         </select>
                                         <br>
 
@@ -72,7 +72,7 @@
                                     <div class="selWidth">
 
                                         <select class="form-control" name="selectLine" id="selectLine">
-                                        <option value="Goal">0</option>
+                                        <option value="Goal">0 (Goal Line)</option>
                                         <option value="Five">5</option>
                                         <option value="Ten">10</option>
                                         <option value="Fifteen">15</option>
@@ -94,8 +94,8 @@
                                     <label for="select" class="control-label"><h5><b>In or Out</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectIn" id="selectIn">
-                                    <option value="Inside">Inside</option>
-                                    <option value="Outside">Outside</option>
+                                    <option value="Inside">Inside (Towards 50)</option>
+                                    <option value="Outside">Outside (Away from 50)</option>
                                         </select>
                                         <br>
                                     </div>
@@ -104,13 +104,13 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5><b>Steps Off</b></h5></label>
+                                    <label for="select" class="control-label"><h5><b>Steps Off Line</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="distanceFromYardLine" id="distanceFromYardLine">
                                             <option value="One">1</option>
                                             <option value="Two">2</option>
                                             <option value="Three">3</option>
-                                            <option value="Four">4</option>
+                                            <option value="Four">4 (Splitting)</option>
                                         </select>
                                         <br>
                                     </div>
@@ -119,11 +119,13 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5><b>Hash Mark</b></h5></label>
+                                    <label for="select" class="control-label"><h5><b>Hash Mark or Sideline</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="hashMark" id="hashMark">
-                                            <option value="Front">Front</option>
-                                            <option value="Back">Back</option>
+                                            <option value="Front Hash">Front Hash</option>
+                                            <option value="Back Hash">Back Hash</option>
+                                            <option value="Front Sideline">Front Sideline</option>
+                                            <option value-"Back Sideline">Back Sideline</option>
                                         </select>
                                         <br>
                                     </div>
@@ -132,11 +134,11 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5><b>Front-Back<b></h5></label>
+                                    <label for="select" class="control-label"><h5><b>In Front Or Behind Hash/Line</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="fOrb" id="fOrb">
                                             <option value="Front">Front</option>
-                                            <option value="Back">Back</option>
+                                            <option value="Back">Behind</option>
                                         </select>
                                         <br>
                                     </div>
@@ -145,7 +147,7 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5><b>Steps from</b></h5></label>
+                                    <label for="select" class="control-label"><h5><b>Steps From Hash</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="stepsFromHash" id="stepsFromHash">
                                             <option value="One">1</option>
