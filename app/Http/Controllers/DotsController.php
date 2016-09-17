@@ -45,7 +45,7 @@ class DotsController extends Controller
 		// 		add a new dot
 		
 		$DotTable = new App\DotTable();
-		$DotTable->pn = $post_data['pageNumber'];
+		$DotTable->pageNumber = $post_data['pageNumber'];
 		$DotTable->ss = $post_data['selectSide'];
 		$DotTable->sl = $post_data['selectLine'];
 		$DotTable->si = $post_data['selectIn'];

@@ -35,13 +35,14 @@
             <div class="panel-body">
                 <div class="row">
                     <form class="form-horizontal" role="form" method="POST" action="/dotLog">
+                    {{ csrf_field() }}
                         <fieldset>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
                                 <div class="form-group">
                                     <div class="selWidth">
-                                        <label class="control-label" for="focusedInput name=" pageNumber " id="pageNumber "">Page Number</label>
-                                        <input class="form-control" id="focusedInput" type="text" placeholder="Solid Sets or Sub Sets">
+                                        <label class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
+                                        <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets">
                                     </div>
                                 </div>
                             </div>
