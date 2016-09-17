@@ -53,6 +53,7 @@ class DotsController extends Controller
 		$DotTable = new App\DotTable();
 		$DotTable->user_id = Auth::user()->id;
 		$DotTable->pageNumber = $post_data['pageNumber'];
+		$DotTable->counts = $post_data['counts'];
 		$DotTable->ss = $post_data['selectSide'];
 		$DotTable->sl = $post_data['selectLine'];
 		$DotTable->si = $post_data['selectIn'];

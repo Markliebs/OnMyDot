@@ -15,7 +15,7 @@
                     <br>
                     <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
                     <?php if($count == 5) break; ?>
-                    <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
+                    <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Counts: {{{ $DotTable->counts }}}</li>
                     <br>
                     <?php $count++; ?> @endforeach
                 </ul>
@@ -35,9 +35,7 @@
                         {{ csrf_field() }}
                         <fieldset>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-
                                 <div class="form-group" id="pageNumAdjust">
-
                                     <label for="input" class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
                                     <div class="pageNumber">
                                         <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets" required>
@@ -46,9 +44,18 @@
                             </div>
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                <div class="form-group" id="pageNumAdjust">
+                                    <label for="input" class="control-label" for="focusedInput" name="counts" id="counts">Counts</label>
+                                    <div class="pageNumber">
+                                        <input class="form-control" id="focusedInput" name="counts" type="text" placeholder="Number Of Counts" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Field Side</h5></label>
+                                    <label for="select" class="control-label"><h5><b>Field Side</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectSide" id="selectSide">
                                         <option value="One">1</option>
@@ -61,7 +68,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Yard Line</h5></label>
+                                    <label for="select" class="control-label"><h5><b>Yard Line</b></h5></label>
                                     <div class="selWidth">
 
                                         <select class="form-control" name="selectLine" id="selectLine">
@@ -84,7 +91,7 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>In or Out</h5></label>
+                                    <label for="select" class="control-label"><h5><b>In or Out</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectIn" id="selectIn">
                                     <option value="Inside">Inside</option>
@@ -97,7 +104,7 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Steps Off</h5></label>
+                                    <label for="select" class="control-label"><h5><b>Steps Off</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="distanceFromYardLine" id="distanceFromYardLine">
                                             <option value="One">1</option>
@@ -112,7 +119,7 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Hash Mark</h5></label>
+                                    <label for="select" class="control-label"><h5><b>Hash Mark</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="hashMark" id="hashMark">
                                             <option value="Front">Front</option>
@@ -125,7 +132,7 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Front-Back</h5></label>
+                                    <label for="select" class="control-label"><h5><b>Front-Back<b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="fOrb" id="fOrb">
                                             <option value="Front">Front</option>
@@ -138,7 +145,7 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                                 <div class="form-group">
-                                    <label for="select" class="control-label"><h5>Steps from</h5></label>
+                                    <label for="select" class="control-label"><h5><b>Steps from</b></h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="stepsFromHash" id="stepsFromHash">
                                             <option value="One">1</option>
@@ -166,7 +173,7 @@
                             <div class="clickyThings">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit To DotBook</button>
+                                        <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit And Add Another Dot</button>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                                         <button type="button" onclick="window.location='/dotbook'" class="btn btn-primary btn-sm dotButton" id="dotButton">Submit And Go To DotBook</button>
@@ -174,7 +181,13 @@
                                 </div>
                             </div>
                         </div>
+
+
+
                 </div>
+
+
+
                 </form>
             </div>
         </div>
