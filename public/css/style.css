@@ -63,6 +63,10 @@ text-align: center;
   margin-top: 5px;
 }
 
+.setlist2 {
+  width: 100%;
+}
+
 /*.button span {
   cursor: pointer;
   display: inline-block;

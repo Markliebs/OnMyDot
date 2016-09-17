@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index');
 Route::post('/dotLog', 'DotsController@create');
 
 Route::get('/dotSummary', 'DotsController@index');
+
+Route::get('/dotbook', 'DotsController@show');

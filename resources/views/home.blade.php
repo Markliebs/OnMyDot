@@ -12,12 +12,12 @@
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 Most Recently Entered Dots Will Appear Here" data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>
                 <ul class="list-group">
-                        <br>
-                        <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
-                        <?php if($count == 5) break; ?>
-                        <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
-                        <br>
-                        <?php $count++; ?> @endforeach
+                    <br>
+                    <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
+                    <?php if($count == 5) break; ?>
+                    <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
+                    <br>
+                    <?php $count++; ?> @endforeach
                 </ul>
             </div>
         </div>
@@ -37,11 +37,11 @@
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
                                 <div class="form-group" id="pageNumAdjust">
-                                    
-                                        <label for="input" class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
-                                        <div class="pageNumber">
-                                            <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets" required>
-                                        </div>
+
+                                    <label for="input" class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
+                                    <div class="pageNumber">
+                                        <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets" required>
+                                    </div>
                                 </div>
                             </div>
 
@@ -51,8 +51,8 @@
                                     <label for="select" class="control-label"><h5>Field Side</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectSide" id="selectSide">
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
+                                        <option value="One">1</option>
+                                        <option value="Two">2</option>
                                         </select>
                                         <br>
 
@@ -65,17 +65,17 @@
                                     <div class="selWidth">
 
                                         <select class="form-control" name="selectLine" id="selectLine">
-                                        <option value="goal">0</option>
-                                        <option value="five">5</option>
-                                        <option value="ten">10</option>
-                                        <option value="fifteen">15</option>
-                                        <option value="twenty">20</option>
-                                        <option value="twentyFive">25</option>
-                                        <option value="thirty">30</option>
-                                        <option value="thirtyFive">35</option>
-                                        <option value="forty">40</option>
-                                        <option value="fortyFive">45</option>
-                                        <option value="fifty">50</option>
+                                        <option value="Goal">0</option>
+                                        <option value="Five">5</option>
+                                        <option value="Ten">10</option>
+                                        <option value="Fifteen">15</option>
+                                        <option value="Twenty">20</option>
+                                        <option value="TwentyFive">25</option>
+                                        <option value="Thirty">30</option>
+                                        <option value="ThirtyFive">35</option>
+                                        <option value="Forty">40</option>
+                                        <option value="FortyFive">45</option>
+                                        <option value="Fifty">50</option>
                                     </select>
                                         <br>
                                     </div>
@@ -87,8 +87,8 @@
                                     <label for="select" class="control-label"><h5>In or Out</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="selectIn" id="selectIn">
-                                    <option value="inside">Inside</option>
-                                    <option value="outside">Outside</option>
+                                    <option value="Inside">Inside</option>
+                                    <option value="Outside">Outside</option>
                                         </select>
                                         <br>
                                     </div>
@@ -100,10 +100,10 @@
                                     <label for="select" class="control-label"><h5>Steps Off</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="distanceFromYardLine" id="distanceFromYardLine">
-                                            <option value="one">1</option>
-                                            <option value="two">2</option>
-                                            <option value="three">3</option>
-                                            <option value="four">4</option>
+                                            <option value="One">1</option>
+                                            <option value="Two">2</option>
+                                            <option value="Three">3</option>
+                                            <option value="Four">4</option>
                                         </select>
                                         <br>
                                     </div>
@@ -115,8 +115,8 @@
                                     <label for="select" class="control-label"><h5>Hash Mark</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="hashMark" id="hashMark">
-                                            <option value="front">Front</option>
-                                            <option value="back">Back</option>
+                                            <option value="Front">Front</option>
+                                            <option value="Back">Back</option>
                                         </select>
                                         <br>
                                     </div>
@@ -128,8 +128,8 @@
                                     <label for="select" class="control-label"><h5>Front-Back</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="fOrb" id="fOrb">
-                                            <option value="front">Front</option>
-                                            <option value="back">Back</option>
+                                            <option value="Front">Front</option>
+                                            <option value="Back">Back</option>
                                         </select>
                                         <br>
                                     </div>
@@ -141,20 +141,20 @@
                                     <label for="select" class="control-label"><h5>Steps from</h5></label>
                                     <div class="selWidth">
                                         <select class="form-control" name="stepsFromHash" id="stepsFromHash">
-                                            <option value="one">1</option>
-                                            <option value="two">2</option>
-                                            <option value="three">3</option>
-                                            <option value="four">4</option>
-                                            <option value="five">5</option>
-                                            <option value="six">6</option>
-                                            <option value="seven">7</option>
-                                            <option value="eight">8</option>
-                                            <option value="nine">9</option>
-                                            <option value="ten">10</option>
-                                            <option value="eleven">11</option>
-                                            <option value="twelve">12</option>
-                                            <option value="thirteen">13</option>
-                                            <option value="fourteen">14</option>
+                                            <option value="One">1</option>
+                                            <option value="Two">2</option>
+                                            <option value="Three">3</option>
+                                            <option value="Four">4</option>
+                                            <option value="Five">5</option>
+                                            <option value="Six">6</option>
+                                            <option value="Seven">7</option>
+                                            <option value="Eight">8</option>
+                                            <option value="Nine">9</option>
+                                            <option value="Ten">10</option>
+                                            <option value="Eleven">11</option>
+                                            <option value="Twelve">12</option>
+                                            <option value="Thirteen">13</option>
+                                            <option value="Fourteen">14</option>
                                         </select>
                                         <br>
                                     </div>
@@ -166,10 +166,10 @@
                             <div class="clickyThings">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Send to DotBook</button>
+                                        <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit To DotBook</button>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <button type="dots" class="btn btn-primary btn-sm dotButton" id="dotButton">Go to DotBook</button>
+                                        <button type="button" onclick="window.location='/dotbook'" class="btn btn-primary btn-sm dotButton" id="dotButton">Submit And Go To DotBook</button>
                                     </div>
                                 </div>
                             </div>
