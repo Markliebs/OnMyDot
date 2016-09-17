@@ -5,7 +5,7 @@
     <div class="row">
         <div class="grid">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here"></img>
+                <img src="/pics/page13.png"></img>
             </div>
         </div>
         <div class="setList">
