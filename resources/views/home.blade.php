@@ -18,7 +18,7 @@
                         <br>
                         <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
                         <?php if($count == 5) break; ?>
-                        <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} <br> Field Side: {{{ $DotTable->ss }}}</li>
+                        <li class="list-group-item">Page Number: {{{ $DotTable->pageNumber }}} Field Side: {{{ $DotTable->ss }}}</li>
                         <br>
                         <?php $count++; ?> @endforeach
                 </ul>
@@ -32,6 +32,7 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Enter a new set</h3>
             </div>
+            
             <div class="panel-body">
                 <div class="row">
                     <form class="form-horizontal" role="form" method="POST" action="/dotLog">
@@ -41,13 +42,11 @@
 
                                 <div class="form-group">
                                     <div class="selWidth">
-                                        <label class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
+                                        <label for="input" class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
                                         <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets">
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
