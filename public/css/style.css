@@ -21,14 +21,16 @@
 .clickyThings {
     padding-top: 20px;
     padding-left: 20px;
-    margin-left: 30%;
+    margin-left: 50%;
+    /*margin-right: 25%;*/
+    /*width: 100%;*/
     align-content: center;
 }
 
-.grid{
-    /*margin-bottom: 15px;
-    width: 50%;*/
-}
+/*.grid{
+    margin-bottom: 15px;
+    width: 50%;
+}*/
 
 #pageNumAdjust {
   margin-top: 11px;
@@ -49,8 +51,10 @@ text-align: center;
 }
 
 .btn {
-    width: 120px;
+    width: 240px;
     margin-top: 10px;
+    margin-left: 10x;
+    margin-right: 10px;
 }
 
 .pageNumber {
