@@ -5,13 +5,12 @@
     <div class="row">
         <div class="grid">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here">
+                <img src="http://placehold.it/750x350/007300/000000?text=Football Field Grid Goes Here"></img>
             </div>
         </div>
         <div class="setList">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 Most Recently Entered Dots Will Appear Here"
-                    data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>
+                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 Most Recently Entered Dots Will Appear Here" data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>
                 <ul class="list-group">
                     {{--
                     <div class="selWidth"> --}}
@@ -32,19 +31,20 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Enter a new set</h3>
             </div>
-            
+
             <div class="panel-body">
                 <div class="row">
                     <form class="form-horizontal" role="form" method="POST" action="/dotLog">
-                    {{ csrf_field() }}
+                        {{ csrf_field() }}
                         <fieldset>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 
-                                <div class="form-group">
-                                    <div class="selWidth">
+                                <div class="form-group" id="pageNumAdjust">
+                                    
                                         <label for="input" class="control-label" for="focusedInput" name="pageNumber" id="pageNumber">Page Number</label>
-                                        <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets">
-                                    </div>
+                                        <div class="pageNumber">
+                                            <input class="form-control" id="focusedInput" name="pageNumber" type="text" placeholder="Solid Sets or Sub Sets" required>
+                                        </div>
                                 </div>
                             </div>
 
@@ -67,7 +67,7 @@
                                     <label for="select" class="control-label"><h5>Yard Line</h5></label>
                                     <div class="selWidth">
 
-                                    <select class="form-control" name="selectLine" id="selectLine">
+                                        <select class="form-control" name="selectLine" id="selectLine">
                                         <option value="goal">0</option>
                                         <option value="five">5</option>
                                         <option value="ten">10</option>
@@ -182,4 +182,4 @@
     </div>
 </div>
 
-    @endsection
+@endsection
