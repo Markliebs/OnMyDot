@@ -10,7 +10,8 @@
         </div>
         <div class="setList">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 Most Recently Entered Dots Will Appear Here" data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>
+                <a href="#" class="list-group-item active" data-toggle="tooltip" data-placement="left" title="5 Most Recently Entered Dots Will Appear Here"
+                    data-original-title="5 most recently entered dots will appear here">5 Latest Dots</a>
                 <ul class="list-group">
                     <br>
                     <?php $count = 0; ?> @foreach ($DotTables as $DotTable)
@@ -174,22 +175,16 @@
                         <div class="form-group">
                             <div class="clickyThings">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                         <button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit And Add Another Dot</button>
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                         <button type="button" onclick="window.location='/dotbook'" class="btn btn-primary btn-sm dotButton" id="dotButton">Submit And Go To DotBook</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-                </div>
-
-
-
+                    </div>
                 </form>
             </div>
         </div>
