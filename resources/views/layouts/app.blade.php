@@ -12,7 +12,6 @@
     <title>On My Dot</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link href="/css/app.css" rel="stylesheet">
@@ -79,7 +78,7 @@
                                                  document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
-                                    
+
 
                                 <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
