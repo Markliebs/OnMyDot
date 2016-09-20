@@ -166,7 +166,7 @@
 
 					<div class="form-group">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-							<button type="submit" class="btn btn-success btn-sm submitButton" id="submitButton">Submit And Add Another Dot</button>
+							<button type="submit" class="btn btn-success btn-sm dotButton" id="submitButton">Submit And Add Another Dot</button>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 							<button type="button" onclick="window.location='/dotbook'" class="btn btn-primary btn-sm dotButton" id="dotButton">Submit And Go To DotBook</button>
