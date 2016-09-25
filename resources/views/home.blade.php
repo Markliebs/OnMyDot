@@ -105,9 +105,17 @@
 									<h5><b>Steps Off Line</b></h5></label>
 								<select class="form-control" name="distanceFromYardLine" id="distanceFromYardLine">
 									<option value="One">1</option>
+									<option value="One and a Quarter">1.25</option>
+									<option value="One and a Half">1.5</option>
 									<option value="Two">2</option>
+									<option value="Two and a Quarter">2.25</option>
+									<option value="Two and a Half">2.5</option>
 									<option value="Three">3</option>
+									<option value="Three and a Quarter">3.25</option>
+									<option value="Three and a Half">3.5</option>
 									<option value="Four">4 (Splitting)</option>
+									<option value="Four and a Quarter">4.25</option>
+									<option value="Four and a Half">4.5</option>
 								</select>
 								<br>
 							</div>
@@ -145,19 +153,47 @@
 									<h5><b>Steps From Hash</b></h5></label>
 								<select class="form-control" name="stepsFromHash" id="stepsFromHash">
 									<option value="One">1</option>
+									<option value="One and a Quarter">1.25</option>
+									<option value="One and a Half">1.5</option>
 									<option value="Two">2</option>
+									<option value="Two and a Quarter">2.25</option>
+									<option value="Two and a Half">2.5</option>
 									<option value="Three">3</option>
+									<option value="Three and a Quarter">3.25</option>
+									<option value="Three and a Half">3.5</option>
 									<option value="Four">4</option>
+									<option value="Four and a Quarter">4.25</option>
+									<option value="Four and a Half">4.5</option>
 									<option value="Five">5</option>
+									<option value="Five and a Quarter">5.25</option>
+									<option value="Five and a Half">5.5</option>
 									<option value="Six">6</option>
+									<option value="Six and a Quarter">6.25</option>
+									<option value="Six and a Half">6.5</option>
 									<option value="Seven">7</option>
+									<option value="Seven and a Quarter">7.25</option>
+									<option value="Seven and a Half">7.5</option>
 									<option value="Eight">8</option>
+									<option value="Eight and a Quarter">8.25</option>
+									<option value="Eight and a Half">8.5</option>
 									<option value="Nine">9</option>
+									<option value="Nine and a Quarter">9.25</option>
+									<option value="Nine and a Half">9.5</option>
 									<option value="Ten">10</option>
+									<option value="Ten and a Quarter">10.25</option>
+									<option value="Ten and a Half">10.5</option>
 									<option value="Eleven">11</option>
+									<option value="Eleven and a Quarter">11.25</option>
+									<option value="Eleven and a Half">11.5</option>
 									<option value="Twelve">12</option>
+									<option value="Twelve and a Quarter">12.25</option>
+									<option value="Twelve and a Half">12.5</option>
 									<option value="Thirteen">13</option>
+									<option value="Thirteen and a Quarter">13.25</option>
+									<option value="Thirteen and a Half">13.5</option>
 									<option value="Fourteen">14</option>
+									<option value="Fourteen and a Quarter">14.25</option>
+									<option value="Fourteen and a Half">14.5</option>
 								</select>
 								<br>
 							</div>
