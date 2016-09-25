@@ -9,7 +9,7 @@
 				<br> @foreach ($DotTables as $DotTable)
 
 				<li class="list-group-item"><b>Page Number: {{{ $DotTable->pageNumber }}} <br> Counts: {{{ $DotTable->counts }}} <br> Field Side: {{{ $DotTable->ss
-                    }}} <br> Yard Line: {{{ $DotTable->sl }}} <br> Inside or Outside: {{{ $DotTable->sl }}} <br> Distance
+                    }}} <br> Yard Line: {{{ $DotTable->sl }}} <br> Inside or Outside: {{{ $DotTable->si }}} <br> Distance
                     from yard line: {{{ $DotTable->dfl }}} <br> Hash Mark: {{{ $DotTable->hm }}} <br> Front or Back: {{{
                     $DotTable->fb }}} <br> Steps From Hash: {{{ $DotTable->sfh }}}</b></li>
 				<br> @endforeach
