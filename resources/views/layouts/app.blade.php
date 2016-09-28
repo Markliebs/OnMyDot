@@ -13,6 +13,7 @@
 	<title>On My Dot</title>
 
 	<!-- Styles -->
+	<link rel="icon" type="image/ico" href="/pics/favicon.ico">
 	<link rel="stylesheet" href="/css/reset.css" type="text/css">
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<link href="/css/app.css" rel="stylesheet">
