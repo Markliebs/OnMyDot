@@ -57,29 +57,17 @@ class DotsController extends Controller
 		// 		add a new dot
 		
 		$DotTable = new App\DotTable();
-		
 		$DotTable->user_id = Auth::user()->id;
-		
 		$DotTable->pageNumber = $post_data['pageNumber'];
-		
 		$DotTable->counts = $post_data['counts'];
-		
 		$DotTable->ss = $post_data['selectSide'];
-		
 		$DotTable->sl = $post_data['selectLine'];
-		
 		$DotTable->si = $post_data['selectIn'];
-		
 		$DotTable->dfl = $post_data['distanceFromYardLine'];
-		
 		$DotTable->hm = $post_data['hashMark'];
-		
 		$DotTable->fb = $post_data['fOrb'];
-		
 		$DotTable->sfh = $post_data['stepsFromHash'];
-		
 		$DotTable->save();
-		
 		$DotTables = DB::table('DotTables')->orderBy('created_at', 'desc')->where('user_id', Auth::user()->id)->get();
 		
 		return view('home', compact('DotTables'));
