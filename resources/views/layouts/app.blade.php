@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<title>Welcome to OnMyDot.Com</title
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,6 +13,7 @@
 	<title>On My Dot</title>
 
 	<!-- Styles -->
+	<link rel="icon" type="image/ico" href="/pics/favicon.ico">
 	<link rel="stylesheet" href="/css/reset.css" type="text/css">
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<link href="/css/app.css" rel="stylesheet">
