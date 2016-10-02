@@ -95,6 +95,7 @@ class DotsController extends Controller
 	{
 		
 		$DotTables = DB::table('DotTables')->get();
+		$DotTable->user_id = Auth::user()->id;
 		
 		return view('dotbook', compact('DotTables'));
 		
