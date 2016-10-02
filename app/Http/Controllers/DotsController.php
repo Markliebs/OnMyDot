@@ -1,6 +1,6 @@
-//** Do NOT do format code on this file...ever...
-
 <?php
+
+//** Do NOT do format code on this file...ever...
 
 namespace App\Http\Controllers;
 
