@@ -95,7 +95,7 @@ class DotsController extends Controller
 	{
 		
 		// $DotTables = DB::table('DotTables')->get();
-		$DotTables = DB::table('DotTables')->orderBy('pageNumber', 'pageID')->where('user_id', Auth::user()->id)->get();
+		$DotTables = DB::table('DotTables')->orderBy('pageNumber', 'desc')->where('user_id', Auth::user()->id)->get();
 		
 		return view('dotbook', compact('DotTables'));
 		
