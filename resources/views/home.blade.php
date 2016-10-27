@@ -75,11 +75,11 @@
 										<option value="Ten">10</option>
 										<option value="Fifteen">15</option>
 										<option value="Twenty">20</option>
-										<option value="TwentyFive">25</option>
+										<option value="Twenty-Five">25</option>
 										<option value="Thirty">30</option>
-										<option value="ThirtyFive">35</option>
+										<option value="Thirty-Five">35</option>
 										<option value="Forty">40</option>
-										<option value="FortyFive">45</option>
+										<option value="Forty-Five">45</option>
 										<option value="Fifty">50</option>
 									</select>
 									<br>
@@ -129,7 +129,7 @@
 									<option value="Front Hash">Front Hash</option>
 									<option value="Back Hash">Back Hash</option>
 									<option value="Front Sideline">Front Sideline</option>
-									<option value- "Back Sideline">Back Sideline</option>
+									<option value="Back Sideline">Back Sideline</option>
 								</select>
 								<br>
 							</div>
